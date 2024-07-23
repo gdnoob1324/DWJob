@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    --l-spacing: -1px;
+    --w-spacing: 2px;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.b {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+* {
+    letter-spacing: var(--l-spacing);
+    word-spacing: var(--w-spacing);
+
+    text-align: center;
+    transition: all 200ms;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #202020;
+    color: #ddd;
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden auto;
+    scroll-snap-type: y mandatory;
+    display: flex;
+}
+
+.page {
+    scroll-snap-align: start;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(0deg, #252525 0%, #202020 90%);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nl {
+    flex: 1 1 100%;
+}
+
+h1 {
+    margin: 16px auto;
+}
+
+.ib {
+    margin: 24px;
+    background-color: #444;
+    flex-basis: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100000px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.ib:hover {
+    transform: scale(1.15);
+}
+
+.ib h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 64px;
+    height: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ib h2 {
+    height: 40%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aa {
+    margin: 24px;
+    background-color: #444;
+    flex-basis: 40%;
+    border-radius: 100000px;
+    overflow: hidden;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.aa h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 64px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
