@@ -49,6 +49,10 @@ body {
     margin: 0 auto;
 }
 
+body div {
+    margin-left: 32px;
+}
+
 body div>div {
     margin: 0 auto;
 }
